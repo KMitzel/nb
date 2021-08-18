@@ -72,7 +72,8 @@
             :rules="newUser.passwordRules"
             required
             id="new-user-password"
-            label="Password"></v-text-field>
+            label="Password"
+            type="password"></v-text-field>
         <!--</v-container>-->
         <v-card-actions class="reset-button">
           <v-btn

@@ -73,7 +73,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <modal classes="modal-background" name="createaccount-modal" :scrollable="true" :height="395" :width="350" :background-color="purple">
+    <modal classes="modal-background" name="createaccount-modal" :scrollable="true" :height="395" :width="350">
       <div class="create-account-div">
         <user-create></user-create>
       </div>
@@ -318,10 +318,6 @@
     width: auto;
     padding: 15px;
     align-content: center;
-  }
-
-  .modal-background {
-    background-color: purple !important;
   }
 
 </style>
