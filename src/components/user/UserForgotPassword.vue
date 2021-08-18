@@ -37,6 +37,8 @@
   import Vue from 'vue'
   import loading from 'vuejs-loading-screen'
   import { eventBus } from "../../main"
+  import Vuetify, { VForm, VCard, VCardTitle, VCardSubtitle, VCardActions, VTextField, VBtn } from 'vuetify/lib'
+  import 'vuetify/dist/vuetify.min.css'
 
   Vue.use(loading, {
     bg: '#4a2270ad',
@@ -93,6 +95,10 @@
             }
         },
     },
+    components: {
+      Vuetify,
+      VForm, VCard, VCardTitle, VCardSubtitle, VCardActions, VTextField, VBtn
+    }
   }
 </script>
 

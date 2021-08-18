@@ -89,6 +89,8 @@
 <script>
   import axios from "axios"
   import { eventBus } from "../../main"
+  import Vuetify, { VForm, VCard, VCardTitle, VCardSubtitle, VTextField, VCardActions, VBtn } from 'vuetify/lib'
+  import 'vuetify/dist/vuetify.min.css'
 
   export default {
     name: "user-create",
@@ -168,6 +170,10 @@
             }
         },
     },
+    components: {
+      Vuetify,
+      VForm, VCard, VCardTitle, VCardSubtitle, VTextField, VCardActions, VBtn
+    }
   }
 </script>
 

@@ -62,11 +62,7 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-divider
-          vertical
-          class="homepage-divider"
-        ></v-divider>
-        <v-col cols="3">
+        <v-col cols="3" class="login-col">
           <user-login class="log-in"></user-login>
         </v-col>
       </v-row>
@@ -91,7 +87,9 @@
   import NavBar from '../components/NavBar.vue'
   import UserCreate from "../components/user/UserCreate.vue"
   import UserLogin from "../components/user/UserLogin.vue"
-  import VueJwtDecode from "vue-jwt-decode";
+  import VueJwtDecode from "vue-jwt-decode";  
+  import { VCard, VCardTitle, VCardSubtitle, VRow, VCol, VContainer, VImg, VCardText } from 'vuetify/lib'
+  import 'vuetify/dist/vuetify.min.css'
   
   export default {
     name: "top-page",
@@ -132,6 +130,14 @@
       NavBar,
       UserCreate,
       UserLogin,
+      VCard,
+      VCardTitle, 
+      VCardSubtitle, 
+      VRow, 
+      VCol, 
+      VContainer, 
+      VImg, 
+      VCardText,
     },
   }
 </script>
@@ -203,6 +209,15 @@
     position: fixed;
     top: 32.5%;
     bottom:67.5%;
+    justify-content: stretch;
+    align-self: stretch;
+  }
+
+  .login-col {
+    column-span:all;
+    width: 100%;
+    justify-content: stretch;
+    align-self: stretch;
   }
 
   .bottom-text {

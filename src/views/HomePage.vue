@@ -47,7 +47,6 @@
             :user="user">
         </course-dashboard>
       </div>
-      
     </div>
   </div>
 </template>
@@ -105,6 +104,14 @@
     },
     methods: {
       loadCourses: function() {
+        if (localStorage.getItem('reloaded')) {
+          localStorage.removeItem('reloaded');
+        } 
+        else {
+          localStorage.setItem('reloaded', '1');
+          location.reload();
+        }
+        
         const token = localStorage.getItem("nb.user");
         const headers = { headers: { Authorization: 'Bearer ' + token }}
 
